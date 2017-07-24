@@ -1,6 +1,6 @@
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Bitter|Forum");
+@import url("https://fonts.googleapis.com/css?family=Zilla+Slab");
 /*COLORS*/
 /*BORDERS*/
 body, html {
@@ -8,15 +8,15 @@ body, html {
 }
 
 body {
-  font-family: 'Forum', cursive;
+  font-family: 'Zilla Slab', serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Bitter', serif;
+  font-family: 'Zilla Slab', serif;
 }
 
 .orange {
-  background-image: url("images/trees.png");
+  background-image: url("https://images.pexels.com/photos/129105/pexels-photo-129105.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 .anker-peet {
   max-width: 75%;
   margin: 50px;
-  box-shadow: 0px 0px 2px 2px #5b687f;
+  box-shadow: 0px 0px 2px 2px #73819a;
   opacity: 0.0;
 }
 
