@@ -11,17 +11,27 @@ $primary-opaque: opacify($primary-color, 0.2);
 /*BORDERS*/
 $main-border: 7px solid $primary-light;
 
+@font-face {
+    font-family: Avenir;
+    src: url("avenir.otf") format("opentype");
+}
+
 body, html {
     height: 100%;
 }
 body {
-    font-family: 'Zilla Slab', serif;
+    font-family: 'Avenir', sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Zilla Slab', serif;
+    font-family: 'Avenir', sans-serif;
+}
+h1 {
+    font-size: 120px;
+    font-weight: 900;;
+    text-align: center;
 }
 .orange {
-    background-image: url("https://images.pexels.com/photos/129105/pexels-photo-129105.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+    background-image: url("images/background-img.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -37,6 +47,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 10%;
     background-color: rgba($primary-color, 0.5);
     padding: 50px 25px 50px 25px;
+    text-align: center;
 }
 .logo {
     background-color: $secondary-color;
@@ -49,14 +60,14 @@ h1, h2, h3, h4, h5, h6 {
     margin: 25px;
 }
 .anker-peet {
-    max-width: 75%;
-    margin: 50px;
-    box-shadow: 0px 0px 2px 2px $primary-light;
-    opacity: 0.0;
+    position: relative;
+    top: 100px;
+    border: $main-border;
+    max-width: 350px;
+    margin: 0 auto;
 }
 .header {
-    border-bottom: $main-border;
-    background-color: $primary-light;
+    background-color: none;
 }
 .blue {
     background-color: $secondary-color;
@@ -66,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
 .middle-row {
     background-color: none;
     color: $light-text;
-    max-width: 50rem;
+    max-width: 90rem;
     margin: 10rem auto 10rem auto;
 }
 .middle-row h1 {
@@ -79,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     padding: 10px;
     font-size: 18px;
-    color:black;
+    color:$light-text;
     font-weight: 700;
 }
 .topnav a:hover {
@@ -118,11 +129,15 @@ footer {
 }
 @media only screen and (max-width: 767px) {
     .anker-peet {
+        max-width: 80vw;
         margin: 50 auto 50 auto;
     }
     .main-text {
         text-align: center;
         padding-left: 25px;
         padding-right: 25px;
+    }
+    h1 {
+        font-size: 90px;
     }
 }
