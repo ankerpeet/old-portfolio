@@ -16,6 +16,7 @@ $main-border: .7rem solid $primary-light;
     src: url("avenir.otf") format("opentype");
 }
 
+//General Settings
 body, html {
     height: 100%;
 }
@@ -30,17 +31,33 @@ h1 {
     font-weight: 900;;
     text-align: center;
 }
+
+//Navbar
+.topnav a {
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.8rem;
+    color:$light-text;
+    font-weight: 700;
+}
+.topnav a:hover {
+    border-bottom: $primary-color solid .3rem;
+}
+.topnav {
+    margin-top: 4rem;
+    float: right;
+}
+.header {
+    background-color: none;
+}
+
+//Top section
 .orange {
     background-image: url("images/background-img.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-.bottom-section {
-    background-color: $secondary-color;
-    background-image: url("https://www.transparenttextures.com/patterns/escheresque.png");
-    background-attachment: fixed;
 }
 .main-text {
     color: $light-text;
@@ -56,9 +73,8 @@ h1 {
     max-width: 40rem;
     margin: 0 auto;
 }
-.header {
-    background-color: none;
-}
+
+//Middle Section
 .blue {
     background-color: $secondary-color;
     border-top: $main-border;
@@ -67,7 +83,6 @@ h1 {
 .middle-row {
     background-color: none;
     color: $light-text;
-    //max-width: 90rem;
     margin: 15rem auto 15rem auto;
 }
 .middle-row h2 {
@@ -76,20 +91,8 @@ h1 {
 .middle-row p {
     font-size: 2rem;
 }
-.topnav a {
-    text-decoration: none;
-    padding: 1rem;
-    font-size: 1.8rem;
-    color:$light-text;
-    font-weight: 700;
-}
-.topnav a:hover {
-    border-bottom: $primary-color solid .3rem;
-}
-.topnav {
-    margin-top: 4rem;
-    float: right;
-}
+
+//Skills
 .icons {
     font-size: 10rem;
     max-width: 10rem;
@@ -97,7 +100,7 @@ h1 {
 }
 .box {
     color: rgba(0, 0, 0, 1.0);
-    //padding: 10rem;
+    padding: 5rem;
 }
 .box:hover {
     box-shadow: 1px 1px 1px 1px lightgray;
@@ -109,20 +112,39 @@ h1 {
     font-size: 9rem;
     text-align: center;
 }
+
+//Projects section
+a img {
+    width: 100%;
+    height: auto;
+}
+.projects {
+    margin: 5rem 0 0 0;
+}
+.projects:hover {
+    background-color: $primary-opaque;
+    
+}
+#portfolio {
+    padding-bottom: 5rem;
+}
+.bottom-section {
+    background-color: $secondary-color;
+    background-image: url("https://www.transparenttextures.com/patterns/escheresque.png");
+    background-attachment: fixed;
+}
+
+//Footer
 footer {
     text-align: center;
     background-color: $primary-color;
     color: $light-text;
     padding: 5rem;
 }
-.projects {
-    background-color: $primary-light;
-    padding: 5rem;
-    margin: 5rem 0 0 0;
-}
-#portfolio {
-    padding-bottom: 5rem;
-}
+
+
+
+//Mobile Classes
 @media only screen and (max-width: 767px) {
     .anker-peet {
         max-width: 80vw;
@@ -134,6 +156,10 @@ footer {
         padding-right: 25px;
     }
     h1 {
-        font-size: 90px;
+        font-size: 7rem;
+    }
+    .white h2 {
+        font-size: 6rem;
+        text-align: center;
     }
 }

@@ -26,18 +26,33 @@ h1 {
   text-align: center;
 }
 
+.topnav a {
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 700;
+}
+
+.topnav a:hover {
+  border-bottom: #5b687f solid 0.3rem;
+}
+
+.topnav {
+  margin-top: 4rem;
+  float: right;
+}
+
+.header {
+  background-color: none;
+}
+
 .orange {
   background-image: url("images/background-img.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.bottom-section {
-  background-color: #303744;
-  background-image: url("https://www.transparenttextures.com/patterns/escheresque.png");
-  background-attachment: fixed;
 }
 
 .main-text {
@@ -54,10 +69,6 @@ h1 {
   border: 0.7rem solid #73819a;
   max-width: 40rem;
   margin: 0 auto;
-}
-
-.header {
-  background-color: none;
 }
 
 .blue {
@@ -80,23 +91,6 @@ h1 {
   font-size: 2rem;
 }
 
-.topnav a {
-  text-decoration: none;
-  padding: 1rem;
-  font-size: 1.8rem;
-  color: white;
-  font-weight: 700;
-}
-
-.topnav a:hover {
-  border-bottom: #5b687f solid 0.3rem;
-}
-
-.topnav {
-  margin-top: 4rem;
-  float: right;
-}
-
 .icons {
   font-size: 10rem;
   max-width: 10rem;
@@ -105,6 +99,7 @@ h1 {
 
 .box {
   color: black;
+  padding: 5rem;
 }
 
 .box:hover {
@@ -120,21 +115,34 @@ h1 {
   text-align: center;
 }
 
+a img {
+  width: 100%;
+  height: auto;
+}
+
+.projects {
+  margin: 5rem 0 0 0;
+}
+
+.projects:hover {
+  background-color: #5b687f;
+}
+
+#portfolio {
+  padding-bottom: 5rem;
+}
+
+.bottom-section {
+  background-color: #303744;
+  background-image: url("https://www.transparenttextures.com/patterns/escheresque.png");
+  background-attachment: fixed;
+}
+
 footer {
   text-align: center;
   background-color: #5b687f;
   color: white;
   padding: 5rem;
-}
-
-.projects {
-  background-color: #73819a;
-  padding: 5rem;
-  margin: 5rem 0 0 0;
-}
-
-#portfolio {
-  padding-bottom: 5rem;
 }
 
 @media only screen and (max-width: 767px) {
@@ -148,6 +156,10 @@ footer {
     padding-right: 25px;
   }
   h1 {
-    font-size: 90px;
+    font-size: 7rem;
+  }
+  .white h2 {
+    font-size: 6rem;
+    text-align: center;
   }
 }
