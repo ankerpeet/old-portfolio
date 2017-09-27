@@ -9,7 +9,7 @@ $primary-light: lighten($primary-color, 10%);
 $light-text: white;
 $primary-opaque: opacify($primary-color, 0.2);
 /*BORDERS*/
-$main-border: 7px solid $primary-light;
+$main-border: .7rem solid $primary-light;
 
 @font-face {
     font-family: Avenir;
@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Avenir', sans-serif;
 }
 h1 {
-    font-size: 120px;
+    font-size: 12rem;
     font-weight: 900;;
     text-align: center;
 }
@@ -44,26 +44,16 @@ h1 {
 }
 .main-text {
     color: $light-text;
-    margin-top: 10%;
+    margin-top: 4rem;
     background-color: rgba($primary-color, 0.5);
-    padding: 50px 25px 50px 25px;
+    padding: 5rem;
     text-align: center;
-}
-.logo {
-    background-color: $secondary-color;
-    color: $light-text;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    font-size: 35px;
-    margin: 25px;
 }
 .anker-peet {
     position: relative;
-    top: 100px;
+    top: 10rem;
     border: $main-border;
-    max-width: 350px;
+    max-width: 40rem;
     margin: 0 auto;
 }
 .header {
@@ -80,52 +70,58 @@ h1 {
     //max-width: 90rem;
     margin: 15rem auto 15rem auto;
 }
-.middle-row h1 {
-    font-size: 35px;
+.middle-row h2 {
+    font-size: 4rem;
 }
 .middle-row p {
-    font-size: 20px;
+    font-size: 2rem;
 }
 .topnav a {
     text-decoration: none;
-    padding: 10px;
-    font-size: 18px;
+    padding: 1rem;
+    font-size: 1.8rem;
     color:$light-text;
     font-weight: 700;
 }
 .topnav a:hover {
-    border-bottom: $primary-color solid 3px;
+    border-bottom: $primary-color solid .3rem;
 }
 .topnav {
-    margin-top: 40px;
+    margin-top: 4rem;
     float: right;
 }
 .icons {
-    font-size: 50px;
-    max-width: 50px;
+    font-size: 10rem;
+    max-width: 10rem;
     height: auto;
 }
 .box {
     color: rgba(0, 0, 0, 1.0);
-    padding: 50px;
+    //padding: 10rem;
 }
 .box:hover {
     box-shadow: 1px 1px 1px 1px lightgray;
 }
 .white {
-    padding: 50px;
+    padding: 10rem;
+}
+.white h2 {
+    font-size: 9rem;
+    text-align: center;
 }
 footer {
     text-align: center;
     background-color: $primary-color;
     color: $light-text;
-    min-height: 75px;
-    padding: 50px;
+    padding: 5rem;
 }
 .projects {
     background-color: $primary-light;
-    padding: 25px;
-    margin: 50px 0 25px 0;
+    padding: 5rem;
+    margin: 5rem 0 0 0;
+}
+#portfolio {
+    padding-bottom: 5rem;
 }
 @media only screen and (max-width: 767px) {
     .anker-peet {
