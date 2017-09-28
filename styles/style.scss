@@ -133,10 +133,25 @@ a img {
     background-image: url("https://www.transparenttextures.com/patterns/escheresque.png");
     background-attachment: fixed;
 }
+//Contact form
+form {
+    max-width: 400px;
+}
+.form-control {
+    border-radius: 0px;
+}
+button {
+    background-color: black;
+    color: white;
+    border: none;
+}
+.contact-form {
+    margin: 0 auto;
+}
 
 //Footer
 footer {
-    text-align: center;
+    text-align: left;
     background-color: $primary-color;
     color: $light-text;
     padding: 5rem;

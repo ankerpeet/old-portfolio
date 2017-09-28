@@ -138,8 +138,26 @@ a img {
   background-attachment: fixed;
 }
 
+form {
+  max-width: 400px;
+}
+
+.form-control {
+  border-radius: 0px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.contact-form {
+  margin: 0 auto;
+}
+
 footer {
-  text-align: center;
+  text-align: left;
   background-color: #5b687f;
   color: white;
   padding: 5rem;
