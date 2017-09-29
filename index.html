@@ -90,11 +90,11 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
                     <div class="projects">
+                        <a href="https://chordcollab.com" target="_blank">
                         <div class="overlay">
-                            <a href="https://chordcollab.com" target="_blank">
                                 <img src="styles/images/chordcollab.PNG" alt="ChordCollab.com">
-                            </a>
-                        </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
@@ -122,26 +122,31 @@
         <div class="container">
             <div class="row contact-form">
                 <div class="col-sm-12 col-md-6">
-                    <form onsubmit="app.controllers.controller.filterData(event)">
+                    <form id="myForm" onsubmit="app.controllers.controller.sendMessage(event)">
                         <input placeholder="Name" class="form-control" name="name" type="text">
-                        <input placeholder="email@example.com" class="form-control" name="email" type="text">
+                        <input placeholder="Email@example.com" class="form-control" name="email" type="text">
                         <textarea class="form-control" name="message" cols="30" rows="10" placeholder="Message"></textarea>
                         <button type="submit">Send</button>
                     </form>
+                    <div id="response"></div>
                 </div>
                 <div class="col-xs-12 col-md-6">
                     <div>
                         <p>Anker Peet</p>
+                        <p>ankerpeet@gmail.com</p>
                         <p>360.316.9376</p>
                     </div>
                     <div>
-                        <i class="fa fa-github"></i>
+                        <a href="https://github.com/ankerpeet" target="_blank"><i class="fa fa-github"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="service.js"></script>
+    <script src="controller.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

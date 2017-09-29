@@ -5,6 +5,7 @@
 /*COLORS*/
 $primary-color: rgba(91, 104, 127, 1.0);
 $secondary-color: darken($primary-color, 20%);
+$secondary-hover: darken($primary-color, 10%);
 $primary-light: lighten($primary-color, 10%);
 $light-text: white;
 $primary-opaque: opacify($primary-color, 0.2);
@@ -15,6 +16,25 @@ $main-border: .7rem solid $primary-light;
     font-family: Avenir;
     src: url("avenir.otf") format("opentype");
 }
+
+//Ankers bootstrap replacement
+// .container {
+//     max-width: 75vw;
+//     margin: 0 auto;
+//     display: flex;
+//     flex-direction: column;
+// }
+// .row {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+
+
+
+//END
 
 //General Settings
 body, html {
@@ -41,6 +61,7 @@ h1 {
     font-weight: 700;
 }
 .topnav a:hover {
+    text-decoration: none;
     border-bottom: $primary-color solid .3rem;
 }
 .topnav {
@@ -101,6 +122,8 @@ h1 {
 .box {
     color: rgba(0, 0, 0, 1.0);
     padding: 5rem;
+    max-width: 25rem;
+    max-height: 25rem;
 }
 .box:hover {
     box-shadow: 1px 1px 1px 1px lightgray;
@@ -133,29 +156,55 @@ a img {
     background-image: url("https://www.transparenttextures.com/patterns/escheresque.png");
     background-attachment: fixed;
 }
-//Contact form
-form {
-    max-width: 400px;
-}
-.form-control {
-    border-radius: 0px;
-}
-button {
-    background-color: black;
-    color: white;
-    border: none;
-}
-.contact-form {
-    margin: 0 auto;
-}
 
 //Footer
 footer {
     text-align: left;
+    font-size: 2rem;
     background-color: $primary-color;
     color: $light-text;
     padding: 5rem;
 }
+
+//Contact form
+form {
+    width: 100%;
+    font-size: 1.5rem;
+    border: solid .7rem $primary-light;
+    background-color: $primary-light;
+}
+.form-control {
+    border: none;
+    border-radius: 0px;
+    height: 5rem;
+}
+button {
+    margin-top: .7rem;
+    background-color: $primary-color;
+    color: $light-text;
+    padding: 15px;
+    border: none;
+    transition: .5s ease;
+}
+button:hover {
+    background-color: $secondary-hover;
+    color: $light-text;
+    transition: .5s ease;
+}
+.contact-form {
+    margin: 0 auto;
+}
+textarea {
+    resize: vertical;
+}
+footer a i {
+    color: white;
+    font-size: 4rem;
+}
+footer a i:hover {
+    color: $secondary-color;
+}
+
 
 
 
