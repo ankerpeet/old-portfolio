@@ -64,6 +64,20 @@ h1 {
   text-align: center;
 }
 
+.other-text {
+  color: black;
+  max-width: 600px;
+  margin-top: 25px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 5rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.other-text h2 {
+  font-size: 4rem;
+}
+
 .anker-peet {
   position: relative;
   top: 10rem;
@@ -101,8 +115,6 @@ h1 {
 .box {
   color: black;
   padding: 5rem;
-  max-width: 25rem;
-  max-height: 25rem;
 }
 
 .box:hover {
@@ -110,7 +122,8 @@ h1 {
 }
 
 .white {
-  padding: 10rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .white h2 {
@@ -124,7 +137,7 @@ a img {
 }
 
 .projects {
-  margin: 5rem 0 0 0;
+  margin-top: 10rem;
 }
 
 .projects:hover {
@@ -132,7 +145,7 @@ a img {
 }
 
 #portfolio {
-  padding-bottom: 5rem;
+  padding-bottom: 10rem;
 }
 
 .bottom-section {
@@ -146,7 +159,8 @@ footer {
   font-size: 2rem;
   background-color: #5b687f;
   color: white;
-  padding: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 form {
@@ -205,10 +219,10 @@ footer a i:hover {
     padding-right: 25px;
   }
   h1 {
-    font-size: 7rem;
+    font-size: 6rem;
   }
   .white h2 {
-    font-size: 6rem;
+    font-size: 4rem;
     text-align: center;
   }
 }

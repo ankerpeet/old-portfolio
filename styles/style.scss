@@ -17,25 +17,6 @@ $main-border: .7rem solid $primary-light;
     src: url("avenir.otf") format("opentype");
 }
 
-//Ankers bootstrap replacement
-// .container {
-//     max-width: 75vw;
-//     margin: 0 auto;
-//     display: flex;
-//     flex-direction: column;
-// }
-// .row {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: center;
-//     align-items: center;
-// }
-
-
-
-
-//END
-
 //General Settings
 body, html {
     height: 100%;
@@ -87,6 +68,18 @@ h1 {
     padding: 5rem;
     text-align: center;
 }
+.other-text {
+    color: black;
+    max-width: 600px;
+    margin-top: 25px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 5rem;
+    text-align: center;
+    margin: 0 auto;
+}
+.other-text h2 {
+    font-size: 4rem;
+}
 .anker-peet {
     position: relative;
     top: 10rem;
@@ -122,14 +115,13 @@ h1 {
 .box {
     color: rgba(0, 0, 0, 1.0);
     padding: 5rem;
-    max-width: 25rem;
-    max-height: 25rem;
 }
 .box:hover {
     box-shadow: 1px 1px 1px 1px lightgray;
 }
 .white {
-    padding: 10rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 }
 .white h2 {
     font-size: 9rem;
@@ -142,14 +134,14 @@ a img {
     height: auto;
 }
 .projects {
-    margin: 5rem 0 0 0;
+    margin-top: 10rem;
 }
 .projects:hover {
     background-color: $primary-opaque;
     
 }
 #portfolio {
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
 }
 .bottom-section {
     background-color: $secondary-color;
@@ -163,7 +155,8 @@ footer {
     font-size: 2rem;
     background-color: $primary-color;
     color: $light-text;
-    padding: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 //Contact form
@@ -220,10 +213,10 @@ footer a i:hover {
         padding-right: 25px;
     }
     h1 {
-        font-size: 7rem;
+        font-size: 6rem;
     }
     .white h2 {
-        font-size: 6rem;
+        font-size: 4rem;
         text-align: center;
     }
 }
