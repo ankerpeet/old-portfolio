@@ -8,6 +8,7 @@ $secondary-color: darken($primary-color, 20%);
 $secondary-hover: darken($primary-color, 10%);
 $primary-light: lighten($primary-color, 10%);
 $light-text: white;
+$other: lighten($primary-color, 38%);
 $primary-opaque: opacify($primary-color, 0.2);
 /*BORDERS*/
 $main-border: .7rem solid $primary-light;
@@ -69,16 +70,14 @@ h1 {
     text-align: center;
 }
 .other-text {
-    color: black;
-    max-width: 600px;
-    margin-top: 25px;
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 5rem;
+    color: $other;
+    padding: 1rem 5rem 1rem 5rem;
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 5rem;
 }
 .other-text h2 {
-    font-size: 4rem;
+    font-size: 9rem;
 }
 .anker-peet {
     position: relative;
@@ -100,7 +99,7 @@ h1 {
     margin: 15rem auto 15rem auto;
 }
 .middle-row h2 {
-    font-size: 4rem;
+    font-size: 5rem;
 }
 .middle-row p {
     font-size: 2rem;
@@ -120,7 +119,7 @@ h1 {
     box-shadow: 1px 1px 1px 1px lightgray;
 }
 .white {
-    padding-top: 10rem;
+    padding-top: 5rem;
     padding-bottom: 10rem;
 }
 .white h2 {
@@ -133,20 +132,16 @@ a img {
     width: 100%;
     height: auto;
 }
-.projects {
-    margin-top: 10rem;
-}
 .projects:hover {
     background-color: $primary-opaque;
     
 }
 #portfolio {
+    padding-top: 5rem;
     padding-bottom: 10rem;
 }
 .bottom-section {
     background-color: $secondary-color;
-    background-image: url("https://www.transparenttextures.com/patterns/escheresque.png");
-    background-attachment: fixed;
 }
 
 //Footer
