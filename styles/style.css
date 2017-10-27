@@ -218,4 +218,7 @@ footer a i:hover {
     font-size: 4rem;
     text-align: center;
   }
+  .other-text h2 {
+    font-size: 4rem;
+  }
 }
